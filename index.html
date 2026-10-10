@@ -9,7 +9,6 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="MCM & Asociados | Estudio Jurídico">
   <meta property="og:description" content="Tu derecho, nuestra prioridad. Sucesiones, ART, jubilaciones, penal y contencioso administrativo.">
-  <meta property="og:image" content="assets/img/contencioso-administrativo.webp">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,6 +52,9 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M3 16v-4l2-5h14l2 5v4zM3 16v2h3v-2M18 16v2h3v-2M7 13h.01M17 13h.01"/></symbol>
+    <symbol id="i-field" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M2 20l6-8h8l6 8zM9 16h6M8 12V8M8 8c-2 0-3-2-3-3 2 0 3 1 3 3zM8 8c2 0 3-2 3-3-2 0-3 1-3 3zM16 12V9"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
     <symbol id="i-laurel" viewBox="0 0 60 100">
       <g fill="currentColor">
         <path d="M44 96C20 84 8 62 10 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
@@ -133,12 +135,22 @@
           </ul>
         </div>
         <div class="hero__visual reveal" aria-hidden="true">
-          <div class="stack">
-            <img src="assets/img/contencioso-administrativo.webp" alt="" class="stack__img stack__img--1" width="1024" height="951" fetchpriority="high">
-            <img src="assets/img/sucesiones.webp" alt="" class="stack__img stack__img--2" width="688" height="922">
-            <img src="assets/img/penales.webp" alt="" class="stack__img stack__img--3" width="670" height="718">
+          <div class="emblem">
+            <span class="emblem__ring emblem__ring--1"></span>
+            <span class="emblem__ring emblem__ring--2"></span>
+            <span class="emblem__ring emblem__ring--3"></span>
+            <div class="emblem__core">
+              <svg class="laurel laurel--l"><use href="#i-laurel"/></svg>
+              <svg class="emblem__scale"><use href="#i-scale"/></svg>
+              <svg class="laurel laurel--r"><use href="#i-laurel"/></svg>
+            </div>
+            <span class="orb orb--1"><svg><use href="#i-house"/></svg>Sucesiones</span>
+            <span class="orb orb--2"><svg><use href="#i-helmet"/></svg>ART</span>
+            <span class="orb orb--3"><svg><use href="#i-people"/></svg>Jubilaciones</span>
+            <span class="orb orb--4"><svg><use href="#i-gavel"/></svg>Penales</span>
+            <span class="orb orb--5"><svg><use href="#i-building"/></svg>Contencioso</span>
           </div>
-          <p class="script stack__note">No estás solo,<br>tus derechos importan</p>
+          <p class="script emblem__note">No estás solo,<br>tus derechos importan</p>
         </div>
       </div>
       <a href="#servicios" class="hero__scroll" aria-label="Bajar"><span></span></a>
@@ -182,17 +194,22 @@
               <li><svg><use href="#i-check"/></svg>Partición de bienes</li>
               <li><svg><use href="#i-check"/></svg>Regularización de propiedades, terrenos, vehículos y cuentas</li>
             </ul>
-            <div class="chips">
-              <span>Casas</span><span>Terrenos</span><span>Vehículos</span><span>Cuentas bancarias</span>
-            </div>
             <p class="script panel__quote">Tu tranquilidad también es nuestra tarea</p>
             <a href="#" class="btn btn--gold" data-wa="Hola Dra. Lorena, falleció un familiar y quisiera consultar por una sucesión.">
               <svg><use href="#i-wa"/></svg> ¿Falleció un familiar? Consultanos
             </a>
           </div>
-          <button class="panel__media" data-lightbox="assets/img/sucesiones.webp" aria-label="Ampliar flyer de Sucesiones">
-            <img src="assets/img/sucesiones.webp" alt="Flyer Sucesiones - MCM & Asociados" loading="lazy" width="688" height="922">
-          </button>
+          <div class="panel__visual" aria-hidden="true">
+            <div class="pv__badge"><svg><use href="#i-house"/></svg></div>
+            <p class="pv__label">Sucesiones</p>
+            <ul class="pv__tiles">
+              <li><svg><use href="#i-house"/></svg>Casas</li>
+              <li><svg><use href="#i-field"/></svg>Terrenos</li>
+              <li><svg><use href="#i-car"/></svg>Vehículos</li>
+              <li><svg><use href="#i-building"/></svg>Cuentas bancarias</li>
+            </ul>
+            <p class="pv__motto">Tu derecho, nuestra prioridad</p>
+          </div>
         </article>
 
         <!-- ART -->
@@ -212,9 +229,17 @@
               <svg><use href="#i-wa"/></svg> Consultar por mi caso ART
             </a>
           </div>
-          <button class="panel__media" data-lightbox="assets/img/accidentes-laborales.webp" aria-label="Ampliar flyer de Accidentes laborales">
-            <img src="assets/img/accidentes-laborales.webp" alt="Flyer Accidentes laborales ART - MCM & Asociados" loading="lazy" width="708" height="935">
-          </button>
+          <div class="panel__visual" aria-hidden="true">
+            <div class="pv__badge"><svg><use href="#i-helmet"/></svg></div>
+            <p class="pv__label">ART</p>
+            <ul class="pv__tiles">
+              <li><svg><use href="#i-helmet"/></svg>Accidentes de trabajo</li>
+              <li><svg><use href="#i-cross"/></svg>Enfermedades profesionales</li>
+              <li><svg><use href="#i-doc"/></svg>Rechazos de la ART</li>
+              <li><svg><use href="#i-scale"/></svg>Indemnizaciones</li>
+            </ul>
+            <p class="pv__motto">Tu derecho, nuestra prioridad</p>
+          </div>
         </article>
 
         <!-- Jubilaciones -->
@@ -234,9 +259,17 @@
               <svg><use href="#i-wa"/></svg> Consultar por mi jubilación
             </a>
           </div>
-          <button class="panel__media" data-lightbox="assets/img/jubilaciones.webp" aria-label="Ampliar flyer de Jubilaciones">
-            <img src="assets/img/jubilaciones.webp" alt="Flyer Jubilaciones y pensiones - MCM & Asociados" loading="lazy" width="712" height="906">
-          </button>
+          <div class="panel__visual" aria-hidden="true">
+            <div class="pv__badge"><svg><use href="#i-people"/></svg></div>
+            <p class="pv__label">ANSES</p>
+            <ul class="pv__tiles">
+              <li><svg><use href="#i-people"/></svg>Jubilación ordinaria</li>
+              <li><svg><use href="#i-doc"/></svg>PUAM</li>
+              <li><svg><use href="#i-shield"/></svg>Pensiones no contributivas</li>
+              <li><svg><use href="#i-helmet"/></svg>Construcción</li>
+            </ul>
+            <p class="pv__motto">Tu derecho, nuestra prioridad</p>
+          </div>
         </article>
 
         <!-- Penales -->
@@ -256,9 +289,17 @@
               <svg><use href="#i-wa"/></svg> Consulta penal urgente
             </a>
           </div>
-          <button class="panel__media" data-lightbox="assets/img/penales.webp" aria-label="Ampliar flyer de Casos penales">
-            <img src="assets/img/penales.webp" alt="Flyer Casos penales - MCM & Asociados" loading="lazy" width="670" height="718">
-          </button>
+          <div class="panel__visual" aria-hidden="true">
+            <div class="pv__badge"><svg><use href="#i-gavel"/></svg></div>
+            <p class="pv__label">Penal</p>
+            <ul class="pv__tiles">
+              <li><svg><use href="#i-shield"/></svg>Defensa del imputado</li>
+              <li><svg><use href="#i-people"/></svg>Violencia de género</li>
+              <li><svg><use href="#i-scale"/></svg>Querellas y denuncias</li>
+              <li><svg><use href="#i-gavel"/></svg>Medidas cautelares</li>
+            </ul>
+            <p class="pv__motto">Tu derecho, nuestra prioridad</p>
+          </div>
         </article>
 
         <!-- Contencioso -->
@@ -278,9 +319,17 @@
               <svg><use href="#i-wa"/></svg> Consultar mi trámite
             </a>
           </div>
-          <button class="panel__media" data-lightbox="assets/img/contencioso-administrativo.webp" aria-label="Ampliar flyer de Contencioso administrativo">
-            <img src="assets/img/contencioso-administrativo.webp" alt="Flyer Trámites contencioso administrativo - MCM & Asociados" loading="lazy" width="1024" height="951">
-          </button>
+          <div class="panel__visual" aria-hidden="true">
+            <div class="pv__badge"><svg><use href="#i-building"/></svg></div>
+            <p class="pv__label">Administrativo</p>
+            <ul class="pv__tiles">
+              <li><svg><use href="#i-doc"/></svg>Reclamos</li>
+              <li><svg><use href="#i-gavel"/></svg>Recursos</li>
+              <li><svg><use href="#i-scale"/></svg>Litigios</li>
+              <li><svg><use href="#i-building"/></svg>Organismos públicos</li>
+            </ul>
+            <p class="pv__motto">Tu derecho, nuestra prioridad</p>
+          </div>
         </article>
       </div>
     </section>
@@ -444,11 +493,6 @@
     </a>
   </div>
 
-  <!-- ===== LIGHTBOX ===== -->
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__close" aria-label="Cerrar">×</button>
-    <img alt="Flyer ampliado">
-  </div>
 
   <script src="js/main.js" defer></script>
 </body>

@@ -93,22 +93,6 @@
   window.addEventListener('hashchange', fromHash);
   fromHash();
 
-  /* ---------- Lightbox ---------- */
-  const lb = document.getElementById('lightbox');
-  const lbImg = lb.querySelector('img');
-  let lastFocus = null;
-  const closeLb = () => { lb.hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); };
-  document.querySelectorAll('[data-lightbox]').forEach((b) => b.addEventListener('click', () => {
-    lastFocus = b;
-    lbImg.src = b.dataset.lightbox;
-    lbImg.alt = b.querySelector('img').alt;
-    lb.hidden = false;
-    document.body.style.overflow = 'hidden';
-    lb.querySelector('button').focus();
-  }));
-  lb.addEventListener('click', (e) => { if (e.target !== lbImg) closeLb(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
-
   /* ---------- Contact form -> WhatsApp ---------- */
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', (e) => {
