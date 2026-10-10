@@ -97,7 +97,7 @@
   const lb = document.getElementById('lightbox');
   const lbImg = lb.querySelector('img');
   let lastFocus = null;
-  const closeLb = () => { lb.hidden = true; document.body.style.overflow = ''; lastFocus && lastFocus.focus(); };
+  const closeLb = () => { lb.hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); };
   document.querySelectorAll('[data-lightbox]').forEach((b) => b.addEventListener('click', () => {
     lastFocus = b;
     lbImg.src = b.dataset.lightbox;
@@ -128,11 +128,11 @@
   /* ---------- Floating WhatsApp bubble ---------- */
   const bubble = document.getElementById('waBubble');
   let dismissed = false;
-  try { dismissed = sessionStorage.getItem('waBubble') === '0'; } catch (_) { /* ignore */ }
+  try { dismissed = sessionStorage.getItem('waBubble') === '0'; } catch { /* ignore */ }
   if (!dismissed) setTimeout(() => bubble.classList.add('is-visible'), 4000);
   document.getElementById('waClose').addEventListener('click', () => {
     bubble.classList.remove('is-visible');
-    try { sessionStorage.setItem('waBubble', '0'); } catch (_) { /* ignore */ }
+    try { sessionStorage.setItem('waBubble', '0'); } catch { /* ignore */ }
   });
 
   /* ---------- Gold dust particles (hero) ---------- */
